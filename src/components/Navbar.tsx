@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
@@ -13,6 +14,11 @@ const navigation = [
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const router = useRouter();
+
+  const isActive = (path: string) => {
+    return router.pathname === path || router.pathname.startsWith(`${path}/`);
+  };
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white">
@@ -37,7 +43,11 @@ const Navbar = () => {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900 hover:text-primary"
+              className={`text-sm font-semibold leading-6 transition-colors duration-200 ${
+                isActive(item.href)
+                  ? 'text-primary'
+                  : 'text-gray-900 hover:text-primary/80'
+              }`}
             >
               {item.name}
             </Link>
@@ -79,7 +89,11 @@ const Navbar = () => {
                         <Link
                           key={item.name}
                           href={item.href}
-                          className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                          className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 transition-colors duration-200 ${
+                            isActive(item.href)
+                              ? 'bg-gray-50 text-primary'
+                              : 'text-gray-900 hover:bg-gray-50'
+                          }`}
                           onClick={() => setMobileMenuOpen(false)}
                         >
                           {item.name}
