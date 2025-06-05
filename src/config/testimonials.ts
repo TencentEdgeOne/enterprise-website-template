@@ -13,7 +13,7 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    content: 'This is the best corporate website solution I have seen, which has significantly improved our brand image and customer conversion rate.',
+    content: 'This is the best enterprise website solution I have seen, which has significantly improved our brand image and customer conversion rate.',
     author: {
       name: 'Manager Zhang',
       role: 'Marketing Director',

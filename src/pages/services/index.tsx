@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
 
 const services = [
   {
@@ -73,7 +72,7 @@ const Services: NextPage = () => {
   return (
     <div className="min-h-screen bg-white">
       <Head>
-        <title>Service Introduction - Corporate Website</title>
+        <title>Service Introduction - Enterprise Website</title>
         <meta
           name="description"
           content="Learn about our professional services and solutions"

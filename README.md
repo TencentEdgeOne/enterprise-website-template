@@ -1,6 +1,6 @@
-# Corporate Website Template
+# Enterprise Website Template
 
-A modern corporate website template built with Next.js and Tailwind CSS, supporting static site generation (SSG).
+A modern enterprise website template built with Next.js and Tailwind CSS, supporting static site generation (SSG).
 
 ## Technology Stack
 

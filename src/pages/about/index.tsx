@@ -59,7 +59,7 @@ const AboutPage: NextPage = () => {
     >
       <div className="min-h-screen bg-white">
         <Head>
-          <title>About Us - Corporate Website</title>
+          <title>About Us - Enterprise Website</title>
           <meta
             name="description"
             content="Learn about our corporate culture, development history, and values"

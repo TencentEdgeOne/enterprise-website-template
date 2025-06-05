@@ -25,7 +25,7 @@ const Navbar = () => {
       <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="text-2xl font-bold text-primary">Corporate Website</span>
+            <span className="text-2xl font-bold text-primary">Enterprise Website</span>
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -71,7 +71,7 @@ const Navbar = () => {
               <div className="w-full max-w-md">
                 <div className="flex items-center justify-between">
                   <Link href="/" className="-m-1.5 p-1.5">
-                    <span className="text-2xl font-bold text-primary">Corporate Website</span>
+                    <span className="text-2xl font-bold text-primary">Enterprise Website</span>
                   </Link>
                   <button
                     type="button"

@@ -41,7 +41,7 @@ const BlocksPage: NextPage = () => {
     >
       <div className="min-h-screen bg-white">
         <Head>
-          <title>UI Blocks - Corporate Website</title>
+          <title>UI Blocks - Enterprise Website</title>
           <meta
             name="description"
             content="Collection of UI components and blocks used across the website"

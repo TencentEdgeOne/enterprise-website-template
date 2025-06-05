@@ -1,7 +1,6 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
 import { ExecutiveCard } from '../../components/cards/ExecutiveCard';
 import { TeamMemberCard } from '../../components/cards/TeamMemberCard';
 import { executives, teamMembers } from '../../config/team';
@@ -15,7 +14,7 @@ const TeamPage: NextPage = () => {
     >
       <div className="min-h-screen bg-white">
         <Head>
-          <title>Our Team - Corporate Website</title>
+          <title>Our Team - Enterprise Website</title>
           <meta
             name="description"
             content="Meet our team of experienced professionals dedicated to your success"

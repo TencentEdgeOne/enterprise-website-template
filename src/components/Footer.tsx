@@ -44,10 +44,10 @@ const Footer = () => {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <Link href="/" className="text-2xl font-bold text-white">
-              Corporate Website
+              Enterprise Website
             </Link>
             <p className="text-sm leading-6 text-white">
-              Building professional corporate website solutions, empowering corporate digital transformation
+              Building professional enterprise website solutions, empowering corporate digital transformation
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
@@ -95,7 +95,7 @@ const Footer = () => {
         </div>
         <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
           <p className="text-xs leading-5 text-white">
-            &copy; {new Date().getFullYear()} Corporate Website. All rights reserved.
+            &copy; {new Date().getFullYear()} Enterprise Website. All rights reserved.
           </p>
         </div>
       </div>
