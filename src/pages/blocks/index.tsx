@@ -27,11 +27,7 @@ const samplePost = posts[0];
 const sampleExecutive = executives[0];
 const sampleTier = tiers[0];
 
-const sampleFeatures = [
-  'Feature One',
-  'Feature Two',
-  'Feature Three',
-];
+
 
 const BlocksPage: NextPage = () => {
   return (

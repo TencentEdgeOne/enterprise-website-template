@@ -18,13 +18,13 @@ export const executives: Executive[] = [
     name: 'Michael Chen',
     role: 'Chief Executive Officer',
     bio: 'Over 15 years of experience in digital transformation and enterprise solutions.',
-    imageUrl: '/team/1.webp',
+    imageUrl: '/team/2.webp',
   },
   {
     name: 'Sarah Johnson',
     role: 'Chief Technology Officer',
     bio: 'Former tech lead at major tech companies, expert in AI and cloud computing.',
-    imageUrl: '/team/2.webp',
+    imageUrl: '/team/1.webp',
   },
   {
     name: 'David Zhang',
@@ -39,12 +39,12 @@ export const teamMembers: TeamMember[] = [
   {
     name: 'Emily Wang',
     role: 'Senior Developer',
-    imageUrl: '/team/1.webp',
+    imageUrl: '/team/2.webp',
   },
   {
     name: 'Tom Wilson',
     role: 'UX Designer',
-    imageUrl: '/team/2.webp',
+    imageUrl: '/team/1.webp',
   },
   {
     name: 'Lisa Chen',
