@@ -19,12 +19,6 @@ const Hero = () => {
             >
               Get Started
             </Link>
-            <Link 
-              href="/" 
-              className="text-sm font-semibold leading-6 text-gray-900 group inline-flex items-center hover:text-gray-700 transition-all duration-300"
-            >
-              View Demo <span aria-hidden="true" className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </Link>
           </div>
           <div className="mt-16 flex items-center justify-center">
             <div className="relative">
