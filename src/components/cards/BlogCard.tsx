@@ -41,7 +41,7 @@ const BlogCard = ({ post, categories }: BlogCardProps) => {
         <div className="mt-6 flex items-center">
           <div className="flex-shrink-0">
             <Image
-              className="h-10 w-10 rounded-full"
+              className="h-10 w-10 rounded-full object-cover"
               src={post.author.imageUrl}
               alt={post.author.name}
               width={40}

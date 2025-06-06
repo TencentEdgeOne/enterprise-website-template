@@ -65,7 +65,7 @@ const BlogPost: NextPage<BlogPostProps> = ({ article, relatedArticles }) => {
             <div className="mx-auto mt-8 max-w-3xl px-6 lg:px-8">
               <div className="flex items-center justify-center">
                 <Image
-                  className="h-12 w-12 rounded-full"
+                  className="h-12 w-12 rounded-full object-cover"
                   src={article.author.imageUrl}
                   alt={article.author.name}
                   width={48}
