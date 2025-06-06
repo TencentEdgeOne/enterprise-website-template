@@ -1,14 +1,16 @@
-import { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
+import { GetStaticProps, NextPage } from "next";
 import { useState } from "react";
-import Navbar from "../../components/Navbar";
-import { categories, posts } from "../../config/articles";
+import { categories } from "../../config/articles";
 import MainLayout from "../../components/layouts/MainLayout";
 import BlogCard from "@/components/cards/BlogCard";
+import { getAllPosts } from "@/utils/markdown";
+import type { Post } from "@/config/articles";
 
-const BlogPage: NextPage = () => {
+interface BlogPageProps {
+  posts: Omit<Post, 'content'>[];
+}
+
+const BlogPage: NextPage<BlogPageProps> = ({ posts }) => {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const filteredPosts =
@@ -62,6 +64,15 @@ const BlogPage: NextPage = () => {
       </main>
     </MainLayout>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const posts = getAllPosts();
+  return {
+    props: {
+      posts,
+    },
+  };
 };
 
 export default BlogPage;

@@ -1,9 +1,8 @@
-import { NextPage } from 'next';
+import { NextPage, GetStaticProps } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
 import { ExecutiveCard } from '../../components/cards/ExecutiveCard';
 import { TeamMemberCard } from '../../components/cards/TeamMemberCard';
 import { executives, teamMembers } from '../../config/team';
@@ -11,25 +10,27 @@ import MainLayout from '../../components/layouts/MainLayout';
 import { features } from '../../config/get-started';
 import { steps } from '../../config/get-started';
 import { benefits, jobPosts } from '../../config/careers';
-import { posts } from '../../config/articles';
 import JobItem from '@/components/careers/JobItem';
 import { PricingTier } from '../../components/pricing/PricingTier';
 import { tiers } from '../../config/pricing';
 import { ContactForm } from '../../components/forms/ContactForm';
 import { testimonials } from '@/config/testimonials';
 import TestimonialCard from '@/components/cards/TestimonialCard';
+import { getAllPosts } from '@/utils/markdown';
+import type { Post } from '@/config/articles';
 
 // Sample data for demonstration
 const sampleFeature = features[0];
 const sampleStep = steps[0];
 const sampleBenefit = benefits[0];
-const samplePost = posts[0];
 const sampleExecutive = executives[0];
 const sampleTier = tiers[0];
 
+interface BlocksPageProps {
+  samplePost: Omit<Post, 'content'>;
+}
 
-
-const BlocksPage: NextPage = () => {
+const BlocksPage: NextPage<BlocksPageProps> = ({ samplePost }) => {
   return (
     <MainLayout
       title="UI Blocks - Technology Company Official Website"
@@ -272,15 +273,9 @@ const BlocksPage: NextPage = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-4">Headings</h3>
                   <div className="space-y-4">
-                    <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                      Heading 1
-                    </h1>
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                      Heading 2
-                    </h2>
-                    <h3 className="text-2xl font-bold tracking-tight text-gray-900">
-                      Heading 3
-                    </h3>
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
                   </div>
                 </div>
 
@@ -288,15 +283,149 @@ const BlocksPage: NextPage = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-4">Body Text</h3>
                   <div className="space-y-4">
-                    <p className="text-lg leading-8 text-gray-600">
+                    <p className="text-body-lg">
                       Large body text for important paragraphs and introductions.
                     </p>
-                    <p className="text-base leading-7 text-gray-600">
+                    <p className="text-body">
                       Regular body text for general content and descriptions.
                     </p>
-                    <p className="text-sm leading-6 text-gray-600">
+                    <p className="text-body-sm">
                       Small text for secondary information and metadata.
                     </p>
+                  </div>
+                </div>
+
+                {/* Buttons */}
+                <div>
+                  <h3 className="text-xl font-semibold mb-4">Buttons</h3>
+                  <div className="space-y-4">
+                    <button className="btn-primary">
+                      Primary Button
+                    </button>
+                    <button className="btn-secondary">
+                      Secondary Button
+                    </button>
+                    <button className="btn-text">
+                      Text Button <span aria-hidden="true">→</span>
+                    </button>
+                  </div>
+                </div>
+
+                {/* Cards */}
+                <div>
+                  <h3 className="text-xl font-semibold mb-4">Cards</h3>
+                  <div className="space-y-4">
+                    <div className="card card-hover max-w-sm">
+                      <h4 className="text-lg font-semibold">Card Title</h4>
+                      <p className="text-body mt-2">
+                        This is a sample card with hover effect.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Tags */}
+                <div>
+                  <h3 className="text-xl font-semibold mb-4">Tags</h3>
+                  <div className="space-x-2">
+                    <span className="tag">Tag 1</span>
+                    <span className="tag">Tag 2</span>
+                    <span className="tag">Tag 3</span>
+                  </div>
+                </div>
+
+                {/* Links */}
+                <div>
+                  <h3 className="text-xl font-semibold mb-4">Links</h3>
+                  <div className="space-x-4">
+                    <a href="#" className="link">Sample Link</a>
+                    <a href="#" className="link">Another Link →</a>
+                  </div>
+                </div>
+
+                {/* Lists */}
+                <div>
+                  <h3 className="text-xl font-semibold mb-4">Lists</h3>
+                  <div className="space-y-8">
+                    {/* Bullet List */}
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2">Bullet List</h4>
+                      <ul>
+                        <li>First item in the list</li>
+                        <li>Second item in the list</li>
+                        <li>Third item with a longer text that might wrap to the next line</li>
+                      </ul>
+                    </div>
+
+                    {/* Numbered List */}
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2">Numbered List</h4>
+                      <ol>
+                        <li>First step in the process</li>
+                        <li>Second step in the process</li>
+                        <li>Final step with additional details that might be longer</li>
+                      </ol>
+                    </div>
+
+                    {/* Check List */}
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2">Check List</h4>
+                      <ul className="list-check">
+                        <li>Available feature one</li>
+                        <li>Available feature two</li>
+                        <li>Another great feature that's included</li>
+                      </ul>
+                    </div>
+
+
+                    {/* Description List */}
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2">Description List</h4>
+                      <dl className="list-description">
+                        <dt>Term One</dt>
+                        <dd>Definition and explanation of the first term</dd>
+                        <dt>Term Two</dt>
+                        <dd>Definition and explanation of the second term</dd>
+                      </dl>
+                    </div>
+
+                    {/* Group List */}
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2">Group List</h4>
+                      <ul className="list-group">
+                        <li>
+                          <span>List item one</span>
+                          <span className="text-gray-500">Details</span>
+                        </li>
+                        <li>
+                          <span>List item two</span>
+                          <span className="text-gray-500">Details</span>
+                        </li>
+                        <li>
+                          <span>List item three</span>
+                          <span className="text-gray-500">Details</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* Grid List */}
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2">Grid List</h4>
+                      <ul className="list-grid">
+                        <li>
+                          <h5 className="font-semibold">Grid Item 1</h5>
+                          <p className="text-body-sm mt-2">Description for grid item one</p>
+                        </li>
+                        <li>
+                          <h5 className="font-semibold">Grid Item 2</h5>
+                          <p className="text-body-sm mt-2">Description for grid item two</p>
+                        </li>
+                        <li>
+                          <h5 className="font-semibold">Grid Item 3</h5>
+                          <p className="text-body-sm mt-2">Description for grid item three</p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -322,6 +451,15 @@ const BlocksPage: NextPage = () => {
       </div>
     </MainLayout>
   );
+};
+
+export const getStaticProps: GetStaticProps<BlocksPageProps> = async () => {
+  const posts = getAllPosts();
+  return {
+    props: {
+      samplePost: posts[0],
+    },
+  };
 };
 
 export default BlocksPage; 

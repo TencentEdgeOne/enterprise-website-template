@@ -4,8 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 import Navbar from '../../components/Navbar';
-import { posts, getRelatedPosts, Post } from '../../config/articles';
+import { Post } from '../../config/articles';
 import MainLayout from '../../components/layouts/MainLayout';
+import { getPostData, getPostSlugs, getAllPosts } from '@/utils/markdown';
 
 interface BlogPostProps {
   article: Post;
@@ -93,7 +94,7 @@ const BlogPost: NextPage<BlogPostProps> = ({ article, relatedArticles }) => {
             </div>
 
             {/* Article Content */}
-            <div className="mx-auto mt-16 max-w-3xl px-6 lg:px-8">
+            <div className="mx-auto mt-16 max-w-4xl px-6 lg:px-8">
               <div
                 className="prose prose-lg prose-primary mx-auto"
                 dangerouslySetInnerHTML={{ __html: article.content || '' }}
@@ -152,15 +153,15 @@ const BlogPost: NextPage<BlogPostProps> = ({ article, relatedArticles }) => {
             </div>
           </div>
         </main>
-
       </div>
     </MainLayout>
   );
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = posts.map((article) => ({
-    params: { slug: article.href.split('/').pop() },
+  const slugs = getPostSlugs();
+  const paths = slugs.map((slug) => ({
+    params: { slug },
   }));
 
   return {
@@ -171,15 +172,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const slug = params?.slug as string;
-  const article = posts.find((article) => article.href.split('/').pop() === slug);
-
-  if (!article) {
-    return {
-      notFound: true,
-    };
-  }
-
-  const relatedArticles = getRelatedPosts(article.id);
+  const article = await getPostData(slug);
+  
+  // 获取相关文章（除了当前文章之外的最新的两篇文章）
+  const allPosts = getAllPosts();
+  const relatedArticles = allPosts
+    .filter(post => post.id !== article.id)
+    .slice(0, 2);
 
   return {
     props: {

@@ -1,7 +1,10 @@
 import Link from 'next/link';
-import { positions } from '@/config/positions';
+import { jobPosts } from '@/config/careers';
 
 const Careers = () => {
+  // 只获取前 3 条职位信息
+  const featuredJobs = jobPosts.slice(0, 3);
+
   return (
     <div className="bg-gray-50 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -15,7 +18,7 @@ const Careers = () => {
         </div>
         <div className="mx-auto mt-16 max-w-2xl">
           <div className="grid gap-4">
-            {positions.map((position) => (
+            {featuredJobs.map((position) => (
               <div
                 key={position.id}
                 className="group relative flex items-center space-x-6 rounded-lg bg-white p-6 shadow-sm hover:shadow-md transition-shadow"
