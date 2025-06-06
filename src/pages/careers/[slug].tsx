@@ -103,7 +103,7 @@ const JobDetail: NextPage<JobDetailProps> = ({ job }) => {
                       <ul role="list" className="mt-4 space-y-4 text-gray-600">
                         {requirement.items.map((item, itemIndex) => (
                           <li key={itemIndex} className="flex gap-x-3">
-                            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-primary text-primary text-sm">
+                            <span className="flex h- w-6 shrink-0 items-center justify-center rounded-lg border border-primary text-primary text-sm mt-1">
                               ✓
                             </span>
                             <span>{item}</span>
