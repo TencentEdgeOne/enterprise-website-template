@@ -21,7 +21,7 @@ const BlogPost: NextPage<BlogPostProps> = ({ article, relatedArticles }) => {
     >
       <div className="min-h-screen bg-white pt-20">
         <Head>
-          <title>{article.title} - Technology Company Official Website</title>
+          <title>{`${article.title} - Technology Company Official Website`}</title>
           <meta name="description" content={article.description} />
         </Head>
 
