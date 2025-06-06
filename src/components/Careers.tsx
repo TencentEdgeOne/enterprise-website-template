@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { jobPosts } from '@/config/careers';
+import { LinkButton } from '@/components/ui/LinkButton';
 
 const Careers = () => {
   // 只获取前 3 条职位信息
@@ -56,12 +57,7 @@ const Careers = () => {
             ))}
           </div>
           <div className="mt-10 flex justify-center">
-            <Link
-              href="/careers"
-              className="text-sm font-semibold leading-6 text-primary group inline-flex items-center hover:text-primary/80 transition-all duration-300"
-            >
-              View All Positions <span aria-hidden="true" className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </Link>
+            <LinkButton href="/careers">View All Positions</LinkButton>
           </div>
         </div>
       </div>

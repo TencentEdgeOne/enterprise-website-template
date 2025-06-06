@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '../../components/Navbar';
+import { LinkButton } from '@/components/ui/LinkButton';
 
 const services = [
   {
@@ -187,13 +188,9 @@ const Services: NextPage = () => {
                     </div>
                   </div>
                   <div className="mt-8">
-                    <Link
-                      href={service.href}
-                      className="text-sm font-medium text-primary hover:text-primary/80"
-                    >
+                    <LinkButton href={service.href} showArrow={true}>
                       Learn More
-                      <span aria-hidden="true"> &rarr;</span>
-                    </Link>
+                    </LinkButton>
                   </div>
                 </article>
               ))}

@@ -20,6 +20,7 @@ import { getAllPosts } from '@/utils/markdown';
 import type { Post } from '@/config/articles';
 import BlogCard from '@/components/cards/BlogCard';
 import { StepCard } from '@/components/ui/StepCard';
+import { LinkButton } from '@/components/ui/LinkButton';
 
 // Sample data for demonstration
 const sampleFeature = features[0];
@@ -271,9 +272,19 @@ const BlocksPage: NextPage<BlocksPageProps> = ({ samplePost }) => {
                 {/* Links */}
                 <div>
                   <h3 className="text-xl font-semibold mb-4">Links</h3>
-                  <div className="space-x-4">
-                    <a href="#" className="link">Sample Link</a>
-                    <a href="#" className="link">Another Link →</a>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2">Regular Link</h4>
+                      <a href="#" className="link">Sample Link</a>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2">Animated Link Button</h4>
+                      <LinkButton href="#">View All Items</LinkButton>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2">Link Button without Arrow</h4>
+                      <LinkButton href="#" showArrow={false}>Read More</LinkButton>
+                    </div>
                   </div>
                 </div>
 

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { LinkButton } from '@/components/ui/LinkButton';
 import { features } from '@/config/features';
 
 const Features = () => {
@@ -25,12 +26,9 @@ const Features = () => {
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
                   <p className="flex-auto">{feature.description}</p>
                   <p className="mt-6">
-                    <Link
-                      href={feature.href}
-                      className="text-sm font-semibold leading-6 text-primary group inline-flex items-center hover:text-primary/80 transition-all duration-300"
-                    >
-                      Learn More <span aria-hidden="true" className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
-                    </Link>
+                    <LinkButton href={feature.href}>
+                      Learn More
+                    </LinkButton>
                   </p>
                 </dd>
               </div>
