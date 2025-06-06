@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import MainLayout from '../../components/layouts/MainLayout';
 import { steps, quickStartGuides, features } from '../../config/get-started';
+import { StepCard } from '@/components/ui/StepCard';
 
 const GetStartedPage: NextPage = () => {
   return (
@@ -39,43 +40,7 @@ const GetStartedPage: NextPage = () => {
             <div className="mx-auto mt-16 max-w-7xl">
               <div className="grid gap-8 lg:grid-cols-2">
                 {steps.map((step) => (
-                  <div
-                    key={step.id}
-                    className="relative flex flex-col overflow-hidden rounded-2xl bg-white shadow-lg"
-                  >
-                    <div className="flex-shrink-0">
-                      <Image
-                        className="h-48 w-full object-cover"
-                        src={step.imageUrl}
-                        alt={step.title}
-                        width={600}
-                        height={300}
-                      />
-                    </div>
-                    <div className="flex flex-1 flex-col justify-between p-6">
-                      <div className="flex-1">
-                        <div className="flex items-center">
-                          <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary text-white">
-                            {step.id}
-                          </span>
-                          <h3 className="ml-3 text-xl font-semibold text-gray-900">
-                            {step.title}
-                          </h3>
-                        </div>
-                        <p className="mt-3 text-base text-gray-500">
-                          {step.description}
-                        </p>
-                      </div>
-                      <div className="mt-6">
-                        <Link
-                          href={step.href}
-                          className="text-sm font-semibold text-primary hover:text-primary/80"
-                        >
-                          {step.action} <span aria-hidden="true">→</span>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
+                  <StepCard key={step.id} step={step} />
                 ))}
               </div>
             </div>

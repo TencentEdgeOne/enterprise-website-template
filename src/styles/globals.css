@@ -99,39 +99,42 @@
   .grid-cols-responsive {
     @apply grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3;
   }
+
+  /* Text style */
   p {
-    @apply text-gray-600;
+    @apply text-gray-600 leading-[1.75] mb-4 last:mb-0;
   }
+
   /* List style */
   /* Unordered list */
   ul:not(.list-check) {
-    @apply list-disc list-outside ml-5 space-y-2 text-gray-600;
+    @apply list-disc list-outside ml-5 space-y-1.5 text-gray-600 my-4 last:mb-0;
   }
 
   ul:not(.list-check) li {
-    @apply pl-2;
+    @apply pl-2 leading-[1.75];
   }
 
   /* Ordered list */
   ol:not(.list-check) {
-    @apply list-decimal list-outside ml-5 space-y-2 text-gray-600;
+    @apply list-decimal list-outside ml-5 space-y-1.5 text-gray-600 my-4 last:mb-0;
   }
 
   ol:not(.list-check) li {
-    @apply pl-2;
+    @apply pl-2 leading-[1.75];
   }
 
   /* Icon list */
   .list-check {
-    @apply space-y-3;
+    @apply space-y-2 my-4 last:mb-0;
   }
 
   .list-check li {
-    @apply flex gap-x-3;
+    @apply flex gap-x-3 leading-[1.75];
   }
 
   .list-check li::before {
-    @apply h-5 w-5 flex-none mt-0.5;
+    @apply h-5 w-5 flex-none mt-1;
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23F76C5E'%3E%3Cpath fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z' clip-rule='evenodd'/%3E%3C/svg%3E");
   }
 

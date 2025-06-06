@@ -18,6 +18,8 @@ import { testimonials } from '@/config/testimonials';
 import TestimonialCard from '@/components/cards/TestimonialCard';
 import { getAllPosts } from '@/utils/markdown';
 import type { Post } from '@/config/articles';
+import BlogCard from '@/components/cards/BlogCard';
+import { StepCard } from '@/components/ui/StepCard';
 
 // Sample data for demonstration
 const sampleFeature = features[0];
@@ -147,45 +149,7 @@ const BlocksPage: NextPage<BlocksPageProps> = ({ samplePost }) => {
               <h2 className="text-2xl font-bold mb-8">Step Cards</h2>
               
               <div className="grid gap-12 lg:grid-cols-2">
-                <div
-                    key={sampleStep.id}
-                    className="flex flex-col overflow-hidden rounded-2xl bg-white shadow-lg"
-                  >
-                    <div className="flex-shrink-0">
-                      <Image
-                        className="h-48 w-full object-cover"
-                        src={sampleStep.imageUrl}
-                        alt={sampleStep.title}
-                        width={600}
-                        height={400}
-                      />
-                    </div>
-                    <div className="flex flex-1 flex-col justify-between bg-white p-6">
-                      <div className="flex-1">
-                        <div className="flex items-center">
-                          <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary">
-                            <span className="text-lg font-medium text-white">
-                              {sampleStep.id}
-                            </span>
-                          </span>
-                          <h3 className="ml-3 text-xl font-semibold text-gray-900">
-                            {sampleStep.title}
-                          </h3>
-                        </div>
-                        <p className="mt-3 text-base text-gray-500">
-                          {sampleStep.description}
-                        </p>
-                      </div>
-                      <div className="mt-6">
-                        <Link
-                          href={sampleStep.href}
-                          className="text-base font-semibold text-primary hover:text-primary/80"
-                        >
-                          {sampleStep.action} →
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
+                <StepCard step={sampleStep} />
               </div>
             </div>
 
@@ -226,41 +190,11 @@ const BlocksPage: NextPage<BlocksPageProps> = ({ samplePost }) => {
               </div>
             </div>
 
-            {/* Sample Blog Post */}
-            <div className="py-12">
-              <div className="mx-auto max-w-7xl">
-                <h2 className="text-2xl font-bold mb-6">Sample Blog Post</h2>
-                <div className="flex flex-col overflow-hidden rounded-lg shadow-lg max-w-md">
-                  <div className="flex-shrink-0">
-                    <Image
-                      className="h-48 w-full object-cover"
-                      src={samplePost.imageUrl}
-                      alt={samplePost.title}
-                      width={600}
-                      height={300}
-                    />
-                  </div>
-                  <div className="flex flex-1 flex-col justify-between bg-white p-6">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-x-4 text-xs">
-                        <time dateTime={samplePost.date} className="text-gray-500">
-                          {samplePost.date}
-                        </time>
-                        <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600">
-                          {samplePost.category}
-                        </span>
-                      </div>
-                      <Link href={samplePost.href} className="mt-2 block">
-                        <h3 className="text-xl font-semibold text-gray-900 hover:text-primary">
-                          {samplePost.title}
-                        </h3>
-                        <p className="mt-3 text-base text-gray-500 line-clamp-3">
-                          {samplePost.description}
-                        </p>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
+            {/* Blog Card */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Blog Card</h3>
+              <div className="max-w-md">
+                <BlogCard post={samplePost} categories={[{ id: samplePost.category, name: samplePost.category }]} />
               </div>
             </div>
 
@@ -408,24 +342,7 @@ const BlocksPage: NextPage<BlocksPageProps> = ({ samplePost }) => {
                       </ul>
                     </div>
 
-                    {/* Grid List */}
-                    <div>
-                      <h4 className="text-lg font-semibold mb-2">Grid List</h4>
-                      <ul className="list-grid">
-                        <li>
-                          <h5 className="font-semibold">Grid Item 1</h5>
-                          <p className="text-body-sm mt-2">Description for grid item one</p>
-                        </li>
-                        <li>
-                          <h5 className="font-semibold">Grid Item 2</h5>
-                          <p className="text-body-sm mt-2">Description for grid item two</p>
-                        </li>
-                        <li>
-                          <h5 className="font-semibold">Grid Item 3</h5>
-                          <p className="text-body-sm mt-2">Description for grid item three</p>
-                        </li>
-                      </ul>
-                    </div>
+              
                   </div>
                 </div>
               </div>
