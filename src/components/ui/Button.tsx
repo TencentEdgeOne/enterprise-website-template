@@ -1,16 +1,17 @@
 import Link from 'next/link';
-import { ButtonHTMLAttributes, ReactNode } from 'react';
+import { ReactNode } from 'react';
 
 interface ButtonBaseProps {
-  children: ReactNode;
   className?: string;
   variant?: 'primary' | 'secondary' | 'outline';
   size?: 'sm' | 'md' | 'lg';
   fullWidth?: boolean;
+  children: ReactNode;
 }
 
-interface ButtonAsButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, ButtonBaseProps {
+interface ButtonAsButtonProps extends ButtonBaseProps {
   href?: never;
+  onClick?: () => void;
 }
 
 interface ButtonAsLinkProps extends ButtonBaseProps {
@@ -51,7 +52,7 @@ export const Button = ({
   if ('href' in props) {
     const { href, onClick } = props;
     return (
-      <Link href={href} className={classes} onClick={onClick}>
+      <Link href={href??''} className={classes} onClick={onClick}>
         {children}
       </Link>
     );
