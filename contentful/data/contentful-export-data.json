@@ -1,0 +1,4918 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "blog",
+        "type": "ContentType",
+        "createdAt": "2025-06-11T07:41:16.356Z",
+        "updatedAt": "2025-06-11T08:10:42.567Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 23,
+        "publishedAt": "2025-06-11T08:10:42.567Z",
+        "firstPublishedAt": "2025-06-11T07:41:16.930Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 12,
+        "version": 24,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/content_types/blog"
+      },
+      "displayField": "title",
+      "name": "Blog",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "date",
+          "name": "Date",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "readingTime",
+          "name": "Reading Time",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "imageUrl",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "author",
+          "name": "Author",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "linkContentType": [
+                "author"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        },
+        {
+          "id": "category",
+          "name": "Category",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "content",
+          "name": "Content",
+          "type": "RichText",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "author",
+        "type": "ContentType",
+        "createdAt": "2025-06-11T07:42:30.341Z",
+        "updatedAt": "2025-06-11T07:42:30.808Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-06-11T07:42:30.808Z",
+        "firstPublishedAt": "2025-06-11T07:42:30.808Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/content_types/author"
+      },
+      "displayField": "name",
+      "name": "Author",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "role",
+          "name": "Role",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "v19aonrkgfez",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 24,
+        "createdAt": "2025-06-11T07:41:17.050Z",
+        "createdBy": {
+          "sys": {
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-11T08:10:43.432Z",
+        "updatedBy": {
+          "sys": {
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blog",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "date",
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "readingTime",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "imageUrl",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "author",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "category",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "content",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "v19aonrkgfez",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-06-11T07:42:30.898Z",
+        "createdBy": {
+          "sys": {
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-11T07:42:31.620Z",
+        "updatedBy": {
+          "sys": {
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "author",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "role",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "2WRuuuH0aeg6WZOMPZfqo9",
+        "type": "Entry",
+        "createdAt": "2025-06-11T07:47:59.928Z",
+        "updatedAt": "2025-06-11T07:54:25.828Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-11T07:54:25.828Z",
+        "firstPublishedAt": "2025-06-11T07:54:25.828Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "author"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/entries/2WRuuuH0aeg6WZOMPZfqo9"
+      },
+      "fields": {
+        "name": {
+          "en-US": "EdgeOne Pages"
+        },
+        "role": {
+          "en-US": "admin"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6fXg7qYUh9w5jhgFr3O5wx"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "24maFxmYhJaStvsmlnC0js",
+        "type": "Entry",
+        "createdAt": "2025-06-11T07:54:42.817Z",
+        "updatedAt": "2025-06-11T08:05:15.501Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 56,
+        "publishedAt": "2025-06-11T08:05:15.501Z",
+        "firstPublishedAt": "2025-06-11T07:57:54.442Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 57,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blog"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/entries/24maFxmYhJaStvsmlnC0js"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Building an Efficient Data Analytics System"
+        },
+        "description": {
+          "en-US": "Sharing best practices for building enterprise data analytics systems."
+        },
+        "date": {
+          "en-US": "2025-06-03T00:00+08:00"
+        },
+        "readingTime": {
+          "en-US": "12 min"
+        },
+        "imageUrl": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6bnsldfqmt4wAXNyH0YTYE"
+            }
+          }
+        },
+        "slug": {
+          "en-US": "data-analytics-system"
+        },
+        "author": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2WRuuuH0aeg6WZOMPZfqo9"
+            }
+          }
+        },
+        "category": {
+          "en-US": "insight"
+        },
+        "content": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "System Architecture Design",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "A complete data analytics system typically includes the following key components:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "ordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Data Collection Layer",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Data Storage Layer",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Data Processing Layer",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Data Analysis Layer",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Data Visualization Layer",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Key Technology Selections",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-3",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Data Storage",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "unordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Relational Database: PostgreSQL",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Non-Relational Database: MongoDB",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Data Warehouse: Snowflake",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-3",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Data Processing",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "unordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Batch Processing: Apache Spark",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Stream Processing: Apache Kafka ",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "ETL Tool: Apache NiFi",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Data Analysis",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "unordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Machine Learning Framework: TensorFlow",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Statistical Analysis Tool: R/Python",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "BI Tool: Tableau",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Best Practices",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "ordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Data Quality Management",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "ordered-list",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Establishing data quality standards",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Implementing data validation mechanisms",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Regular data audits",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Performance Optimization",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "ordered-list",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Reasonable data partitioning strategies",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Query optimization",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Caching mechanisms",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Security Considerations",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "ordered-list",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Data encryption",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Access control",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Audit logs",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Common Challenges and Solutions",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "ordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Data Consistency",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "System Scalability",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Real-time Requirements",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Cost Control",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Future Outlook",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "As technology advances, data analytics systems will evolve towards being more intelligent and automated. Enterprises need to continuously focus on the development of new technologies and timely update their data analytics capabilities. ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "3ayzr4tfkIx4THw2UzTh9Z",
+        "type": "Entry",
+        "createdAt": "2025-06-11T08:05:24.195Z",
+        "updatedAt": "2025-06-11T08:09:14.927Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 22,
+        "publishedAt": "2025-06-11T08:09:14.927Z",
+        "firstPublishedAt": "2025-06-11T08:09:14.927Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 23,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blog"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/entries/3ayzr4tfkIx4THw2UzTh9Z"
+      },
+      "fields": {
+        "title": {
+          "en-US": "AI Applications in Enterprise Digital Transformation"
+        },
+        "description": {
+          "en-US": "Exploring how AI technology helps enterprises achieve intelligent upgrades and improve operational efficiency."
+        },
+        "date": {
+          "en-US": "2025-06-05T00:00+08:00"
+        },
+        "readingTime": {
+          "en-US": "8 min"
+        },
+        "imageUrl": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7GPTPh9IoSWUzeRu08FPtA"
+            }
+          }
+        },
+        "slug": {
+          "en-US": "ai-transformation"
+        },
+        "author": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2bHQqAKXzA3Zs2bBUN3zLc"
+            }
+          }
+        },
+        "category": {
+          "en-US": "tech"
+        },
+        "content": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Introduction",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "In today's digital era, enterprises are facing unprecedented transformation pressures. Artificial intelligence, as a revolutionary technology, is becoming the core driving force behind enterprise digital transformation.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Main Application Areas of AI in Enterprises",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "ordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Intelligent Customer Service",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Predictive Maintenance",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Process Automation",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Data Analysis",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Decision Support",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Key Steps for Implementing AI Transformation",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "ordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Clarify Business Objectives",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Data Preparation and Governance",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Selecting Suitable AI Solutions",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Talent Cultivation and Organizational Adjustment",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Continuous Optimization and Iteration",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Future Outlook",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "AI technology will continue to evolve, bringing more innovative opportunities to enterprises. Enterprises need to maintain an open and positive mindset, embracing this technological transformation. ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "2bHQqAKXzA3Zs2bBUN3zLc",
+        "type": "Entry",
+        "createdAt": "2025-06-11T08:06:45.770Z",
+        "updatedAt": "2025-06-11T08:07:25.954Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-06-11T08:07:25.954Z",
+        "firstPublishedAt": "2025-06-11T08:07:25.954Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "author"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/entries/2bHQqAKXzA3Zs2bBUN3zLc"
+      },
+      "fields": {
+        "name": {
+          "en-US": "John Zhang"
+        },
+        "role": {
+          "en-US": "Technical Director"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1qHiocsY4ZIFYhNVCfd35m"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "1X3C5rMjKD4DhzZ05T9p2t",
+        "type": "Entry",
+        "createdAt": "2025-06-11T08:09:24.332Z",
+        "updatedAt": "2025-06-11T08:09:54.792Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-06-11T08:09:54.792Z",
+        "firstPublishedAt": "2025-06-11T08:09:54.792Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "author"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/entries/1X3C5rMjKD4DhzZ05T9p2t"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Mike Li"
+        },
+        "role": {
+          "en-US": "Research Director"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2Pm4JupbuQfjx65lD3IKfC"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "4azef0vzybHsuYnDAqe8dO",
+        "type": "Entry",
+        "createdAt": "2025-06-11T08:09:59.983Z",
+        "updatedAt": "2025-06-11T08:13:28.009Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 22,
+        "publishedAt": "2025-06-11T08:13:28.009Z",
+        "firstPublishedAt": "2025-06-11T08:13:28.009Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 23,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blog"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/entries/4azef0vzybHsuYnDAqe8dO"
+      },
+      "fields": {
+        "title": {
+          "en-US": "2024 Enterprise Digital Transformation Trends"
+        },
+        "description": {
+          "en-US": "In-depth analysis of major trends in enterprise digital transformation for 2024."
+        },
+        "date": {
+          "en-US": "2025-05-03T00:00+08:00"
+        },
+        "readingTime": {
+          "en-US": "10 min"
+        },
+        "imageUrl": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3LBQDIfcN4DnzYe1ht33bX"
+            }
+          }
+        },
+        "slug": {
+          "en-US": "digital-trends-2024"
+        },
+        "author": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1X3C5rMjKD4DhzZ05T9p2t"
+            }
+          }
+        },
+        "category": {
+          "en-US": "industry"
+        },
+        "content": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Key Trends",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "ordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "The Prevalence of Hybrid Cloud Architecture",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Zero-Trust Security Architecture",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Low-Code/No-Code Platforms",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "The Application of Edge Computing",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Sustainable Technology Development",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Industry Impact",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Different industries are embracing digital transformation in various ways:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "unordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Manufacturing: Smart Factory",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Retail: Omnichannel Experience",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Finance: Open Banking",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Healthcare: Telemedicine",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Implementation Recommendations",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "ordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Formulate a Clear Digitalization Strategy",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Establish an Agile Culture",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Invest in Talent Development",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Focus on Data Security",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Continuously Innovate ",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "8WMpCOfV4pdtRIOw4ZpfG",
+        "type": "Entry",
+        "createdAt": "2025-06-11T08:13:38.237Z",
+        "updatedAt": "2025-06-11T08:14:18.471Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-06-11T08:14:18.471Z",
+        "firstPublishedAt": "2025-06-11T08:14:18.471Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "author"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/entries/8WMpCOfV4pdtRIOw4ZpfG"
+      },
+      "fields": {
+        "name": {
+          "en-US": "David Zhao"
+        },
+        "role": {
+          "en-US": "Solution Expert"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "yfok1Th95NwDwzC66K4AG"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "3aVbegbJx1KgT8HpRAOqtO",
+        "type": "Entry",
+        "createdAt": "2025-06-11T08:14:24.966Z",
+        "updatedAt": "2025-06-11T08:41:25.726Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 56,
+        "publishedAt": "2025-06-11T08:41:25.726Z",
+        "firstPublishedAt": "2025-06-11T08:41:25.726Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 57,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blog"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/entries/3aVbegbJx1KgT8HpRAOqtO"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Digital Transformation Case Study: Manufacturing Industry"
+        },
+        "description": {
+          "en-US": "Detailed analysis of how a manufacturing company improved efficiency through digital transformation."
+        },
+        "date": {
+          "en-US": "2025-06-21T00:00+08:00"
+        },
+        "readingTime": {
+          "en-US": "15 min"
+        },
+        "imageUrl": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2rOeIjxfkErcCDot64F2tD"
+            }
+          }
+        },
+        "slug": {
+          "en-US": "manufacturing-case-study"
+        },
+        "author": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "8WMpCOfV4pdtRIOw4ZpfG"
+            }
+          }
+        },
+        "category": {
+          "en-US": "case"
+        },
+        "content": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Project Background",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "A large manufacturing company faced the following challenges:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "unordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Low production efficiency",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Difficulty in quality control",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Chaotic inventory management",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "High equipment maintenance costs- Rising labor costs",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Solution",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-3",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "1. Smart Factory Construction",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "unordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Introduction of industrial internet of things platform",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Deployment of smart sensors",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Implementation of predictive maintenance system",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Establishment of digital twin system",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-3",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "2. Production Process Optimization",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "unordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "MES system upgrade",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Intelligent scheduling of production plans",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Online quality monitoring",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Automatic material distribution",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-3",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "3. Supply Chain Transformation",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "unordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Supplier collaboration platform",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Intelligent storage system",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Logistics tracking system",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Demand forecasting analysis",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Implementation Process",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "ordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Pre-planning phase (2 months)",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "ordered-list",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Requirements analysis",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Solution design",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Supplier selection",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "System implementation phase (6 months)",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "ordered-list",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Hardware deployment",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Software development",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "System integration",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Personnel training",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Operational optimization phase (ongoing)",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "ordered-list",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Data analysis",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Process optimization",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": "list-item",
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "nodeType": "paragraph",
+                                "data": {
+                                },
+                                "content": [
+                                  {
+                                    "nodeType": "text",
+                                    "value": "Continuous improvement",
+                                    "marks": [
+                                    ],
+                                    "data": {
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Project Achievements",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "ordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "30% increase in production efficiency",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "50% reduction in quality defect rate",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "40% increase in inventory turnover rate",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "60% reduction in equipment failure rate",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "25% reduction in labor costs",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Summary of Experience",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "ordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Top-level attention is key",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Data-driven decision-making",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Continuous optimization and improvement",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Emphasis on talent cultivation",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Attention to change management",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Future Outlook",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Digital transformation is a continuous process, and companies need to:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "ordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Maintain technological sensitivity",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Continuously invest in innovation",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Focus on industry development",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Emphasize talent cultivation",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "6fXg7qYUh9w5jhgFr3O5wx",
+        "type": "Asset",
+        "createdAt": "2025-06-11T07:48:18.983Z",
+        "updatedAt": "2025-06-11T07:54:11.877Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-06-11T07:54:11.877Z",
+        "firstPublishedAt": "2025-06-11T07:54:11.877Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/assets/6fXg7qYUh9w5jhgFr3O5wx"
+      },
+      "fields": {
+        "title": {
+          "en-US": "EdgeOne Pages Image"
+        },
+        "file": {
+          "en-US": {
+            "url": "//assets.ctfassets.net/v19aonrkgfez/6fXg7qYUh9w5jhgFr3O5wx/ee296d63450f5e39ac1407d943b73675/favicon.ico",
+            "details": {
+              "size": 188478
+            },
+            "fileName": "favicon.ico",
+            "contentType": "image/x-icon"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "6bnsldfqmt4wAXNyH0YTYE",
+        "type": "Asset",
+        "createdAt": "2025-06-11T07:57:08.151Z",
+        "updatedAt": "2025-06-11T07:57:41.886Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-11T07:57:41.886Z",
+        "firstPublishedAt": "2025-06-11T07:57:41.886Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/assets/6bnsldfqmt4wAXNyH0YTYE"
+      },
+      "fields": {
+        "title": {
+          "en-US": "data analytics"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/v19aonrkgfez/6bnsldfqmt4wAXNyH0YTYE/1d178186b96de0b55e40a7aa8de547af/data-analytics.png",
+            "details": {
+              "size": 763739,
+              "image": {
+                "width": 1274,
+                "height": 808
+              }
+            },
+            "fileName": "data-analytics.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "7GPTPh9IoSWUzeRu08FPtA",
+        "type": "Asset",
+        "createdAt": "2025-06-11T08:05:52.195Z",
+        "updatedAt": "2025-06-11T08:06:13.246Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-11T08:06:13.246Z",
+        "firstPublishedAt": "2025-06-11T08:06:13.246Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/assets/7GPTPh9IoSWUzeRu08FPtA"
+      },
+      "fields": {
+        "title": {
+          "en-US": "ai transformation"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/v19aonrkgfez/7GPTPh9IoSWUzeRu08FPtA/98868f0da6199e776c97e2fe998b6ae4/ai-transformation.png",
+            "details": {
+              "size": 542934,
+              "image": {
+                "width": 1169,
+                "height": 812
+              }
+            },
+            "fileName": "ai-transformation.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "1qHiocsY4ZIFYhNVCfd35m",
+        "type": "Asset",
+        "createdAt": "2025-06-11T08:06:59.219Z",
+        "updatedAt": "2025-06-11T08:07:18.499Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-11T08:07:18.499Z",
+        "firstPublishedAt": "2025-06-11T08:07:18.499Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/assets/1qHiocsY4ZIFYhNVCfd35m"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Person1"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/v19aonrkgfez/1qHiocsY4ZIFYhNVCfd35m/dbf897419fe9b2a32c91ec4b51d22488/1.webp",
+            "details": {
+              "size": 16078,
+              "image": {
+                "width": 408,
+                "height": 612
+              }
+            },
+            "fileName": "1.webp",
+            "contentType": "image/webp"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "2Pm4JupbuQfjx65lD3IKfC",
+        "type": "Asset",
+        "createdAt": "2025-06-11T08:09:35.030Z",
+        "updatedAt": "2025-06-11T08:09:50.668Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-11T08:09:50.668Z",
+        "firstPublishedAt": "2025-06-11T08:09:50.668Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/assets/2Pm4JupbuQfjx65lD3IKfC"
+      },
+      "fields": {
+        "title": {
+          "en-US": "person2"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/v19aonrkgfez/2Pm4JupbuQfjx65lD3IKfC/1280aab280d0a26f9075dbbff7baf8b5/2.webp",
+            "details": {
+              "size": 966612,
+              "image": {
+                "width": 4096,
+                "height": 2731
+              }
+            },
+            "fileName": "2.webp",
+            "contentType": "image/webp"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "3LBQDIfcN4DnzYe1ht33bX",
+        "type": "Asset",
+        "createdAt": "2025-06-11T08:11:11.484Z",
+        "updatedAt": "2025-06-11T08:11:40.537Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-11T08:11:40.537Z",
+        "firstPublishedAt": "2025-06-11T08:11:40.537Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/assets/3LBQDIfcN4DnzYe1ht33bX"
+      },
+      "fields": {
+        "title": {
+          "en-US": "digital trends 2024"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/v19aonrkgfez/3LBQDIfcN4DnzYe1ht33bX/92cec66576a621b8df65d03e95e78b35/digital-trends.png",
+            "details": {
+              "size": 607283,
+              "image": {
+                "width": 1229,
+                "height": 734
+              }
+            },
+            "fileName": "digital-trends.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "yfok1Th95NwDwzC66K4AG",
+        "type": "Asset",
+        "createdAt": "2025-06-11T08:13:56.307Z",
+        "updatedAt": "2025-06-11T08:14:11.946Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-11T08:14:11.946Z",
+        "firstPublishedAt": "2025-06-11T08:14:11.946Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/assets/yfok1Th95NwDwzC66K4AG"
+      },
+      "fields": {
+        "title": {
+          "en-US": "person3"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/v19aonrkgfez/yfok1Th95NwDwzC66K4AG/62ad9c9202451a96161dcb0a7de0397c/3.webp",
+            "details": {
+              "size": 18998,
+              "image": {
+                "width": 408,
+                "height": 612
+              }
+            },
+            "fileName": "3.webp",
+            "contentType": "image/webp"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "id": "2rOeIjxfkErcCDot64F2tD",
+        "type": "Asset",
+        "createdAt": "2025-06-11T08:14:51.817Z",
+        "updatedAt": "2025-06-11T08:15:10.459Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-11T08:15:10.459Z",
+        "firstPublishedAt": "2025-06-11T08:15:10.459Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/v19aonrkgfez/environments/master/assets/2rOeIjxfkErcCDot64F2tD"
+      },
+      "fields": {
+        "title": {
+          "en-US": "case study"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/v19aonrkgfez/2rOeIjxfkErcCDot64F2tD/877c6710430720ce93cb3211386b4af4/case-study.png",
+            "details": {
+              "size": 1053208,
+              "image": {
+                "width": 1181,
+                "height": 834
+              }
+            },
+            "fileName": "case-study.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "7pBne91P8zrrXDgMjEmHC9",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "aa504ef4-f5ad-48d8-8319-91474d2d2a52"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "createdAt": "2025-06-11T07:38:12Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedAt": "2025-06-11T07:38:12Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "7q29CybThuUR52iOPlt3fz",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "v19aonrkgfez"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "createdAt": "2025-06-11T07:38:12Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6YyRVyQTJTxvEWyT8sX3Fc"
+          }
+        },
+        "updatedAt": "2025-06-11T07:38:12Z"
+      }
+    }
+  ]
+}

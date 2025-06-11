@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "npm run prebuild && next dev",
+    "build": "npm run prebuild && next build",
+    "start": "npm run prebuild && next start",
+    "lint": "next lint",
+    "prebuild": "tsx contentful/fetch-content.ts"
   },
   "dependencies": {
+    "@contentful/rich-text-types": "^17.0.0",
     "@headlessui/react": "^2.2.4",
     "@heroicons/react": "^2.2.0",
+    "contentful": "^11.7.1",
+    "dotenv": "^16.5.0",
     "gray-matter": "^4.0.3",
     "next": "15.3.1",
     "react": "^18.2.0",
