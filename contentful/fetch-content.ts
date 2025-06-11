@@ -177,7 +177,7 @@ async function fetchAndSaveContent() {
     }
 
     // Get all blog
-    const entries = await client.getEntries<BlogFields['fields']>({
+    const entries = await client.getEntries({
       content_type: 'blog',
     });
 
@@ -200,12 +200,12 @@ async function fetchAndSaveContent() {
 
       // 下载作者头像和文章封面图片
       const authorImage = author?.fields?.image;
-      const authorImageUrl = authorImage?.fields?.file?.url || "";
+      const authorImageUrl = (authorImage?.fields as any)?.file?.url || "";
       const coverImage = imageUrl?.fields?.file;
       const coverImageUrl = coverImage?.url || "";
       
       const localAuthorImage = await downloadImage(authorImageUrl, `authors/${slug}`);
-      const localCoverImage = await downloadImage(coverImageUrl, slug);
+      const localCoverImage = await downloadImage(coverImageUrl as string, slug);
 
       // Create frontmatter and content
       const fileContent = `---
