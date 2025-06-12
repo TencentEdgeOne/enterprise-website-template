@@ -67,7 +67,7 @@ yarn build
 The project provides a script to integrate with Contentful CMS, which can pull blog data from Contentful to Markdown.
 
 The project provides a data structure that can be directly [imported](https://www.contentful.com/developers/docs/tutorials/cli/import-and-export/) into Contentful:
-contentful space import --content-file contentful-export.json --space-id ${your-space-id}
+`contentful space import --content-file contentful-export.json --space-id ${your-space-id}`
 
 Configure environment variables locally:
 

@@ -67,7 +67,7 @@ yarn build
 项目提供了结合 Contentful CMS 的脚本，可以将Contentful上的博客数据拉取到Markdown。
 
 本项目提供了数据结构可以直接[导入](https://www.contentful.com/developers/docs/tutorials/cli/import-and-export/)到 Contentful:
-contentful space import --content-file contentful-export.json --space-id ${your-space-id}
+`contentful space import --content-file contentful-export.json --space-id ${your-space-id}`
 
 配置环境变量到本地：
 ```
