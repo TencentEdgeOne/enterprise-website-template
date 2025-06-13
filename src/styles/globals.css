@@ -107,20 +107,20 @@
 
   /* List style */
   /* Unordered list */
-  ul:not(.list-check) {
+  ul:not(.list-check, .list-none) {
     @apply list-disc list-outside ml-5 space-y-1.5 text-gray-600 my-4 last:mb-0;
   }
 
-  ul:not(.list-check) li {
+  ul:not(.list-check, .list-none) li {
     @apply pl-2 leading-[1.75];
   }
 
   /* Ordered list */
-  ol:not(.list-check) {
+  ol:not(.list-check, .list-none) {
     @apply list-decimal list-outside ml-5 space-y-1.5 text-gray-600 my-4 last:mb-0;
   }
 
-  ol:not(.list-check) li {
+  ol:not(.list-check, .list-none) li {
     @apply pl-2 leading-[1.75];
   }
 

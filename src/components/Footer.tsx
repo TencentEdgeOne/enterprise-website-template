@@ -66,7 +66,7 @@ const Footer = () => {
             
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-white">Support</h3>
-                <ul role="list" className="mt-6 space-y-4">
+                <ul role="list" className="mt-6 space-y-4 list-none">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
                       <Link href={item.href} className="text-sm leading-6 text-white hover:text-white">
@@ -80,7 +80,7 @@ const Footer = () => {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-white">Company</h3>
-                <ul role="list" className="mt-6 space-y-4">
+                <ul role="list" className="mt-6 space-y-4 list-none">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
                       <Link href={item.href} className="text-sm leading-6 text-white hover:text-white">
