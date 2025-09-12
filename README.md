@@ -142,7 +142,7 @@ npm run build
 
 ## License
 
-[MIT License](LICENSE)
+[MIT License](https://github.com/TencentEdgeOne/enterprise-website-template/blob/main/LICENSE)
 
 ## Deploy
 [![Deploy with EdgeOne Pages](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://console.tencentcloud.com/edgeone/pages/new?template=enterprise-website-template)
