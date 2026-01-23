@@ -8,7 +8,6 @@ export const navigation: NavigationItem[] = [
   { name: 'Team', href: '/team' },
   { name: 'Career Opportunities', href: '/careers' },
   { name: 'Blog', href: '/blog' },
-  { name: 'Pricing', href: '/pricing' },
   { name: 'UI Blocks', href: '/blocks' },
 ];
 
