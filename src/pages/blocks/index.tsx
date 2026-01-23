@@ -14,6 +14,7 @@ import JobItem from '@/components/careers/JobItem';
 import { PricingTier } from '../../components/pricing/PricingTier';
 import { tiers } from '../../config/pricing';
 import { ContactForm } from '../../components/forms/ContactForm';
+import { FORMSPREE_ID } from '../../config/formspree';
 import { testimonials } from '@/config/testimonials';
 import TestimonialCard from '@/components/cards/TestimonialCard';
 import { getAllPosts } from '@/utils/markdown';
@@ -368,7 +369,7 @@ const BlocksPage: NextPage<BlocksPageProps> = ({ samplePost }) => {
                 <div>
                   <h3 className="text-xl font-semibold mb-4">Contact Form</h3>
                   <div className="max-w-2xl">
-                    <ContactForm onSubmit={(data) => console.log('Form submitted:', data)} />
+                    <ContactForm formspreeId={FORMSPREE_ID} />
                   </div>
                 </div>
               </div>

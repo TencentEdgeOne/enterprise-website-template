@@ -64,18 +64,22 @@ yarn build
 ```
 
 ## 结合 CMS（可选）
-项目提供了结合 Contentful CMS 的脚本，可以将Contentful上的博客数据拉取到Markdown。
+
+项目提供了结合 Contentful CMS 的脚本，可以将 Contentful 上的博客数据拉取到 Markdown。
 
 本项目提供了数据结构可以直接[导入](https://www.contentful.com/developers/docs/tutorials/cli/import-and-export/)到 Contentful:
 `contentful space import --content-file contentful-export.json --space-id ${your-space-id}`
 
 配置环境变量到本地：
+
 ```
 CONTENTFUL_SPACE_ID=Contentful 空间 ID
 CONTENTFUL_DELIVERY_TOKEN=Contentful API 密钥
 CONTENTFUL_PREVIEW_TOKEN=Contentful 预览密钥
 DEV=true
+NEXT_PUBLIC_FORMSPREE_ID=Formspree 联系我们提交时的表单 ID
 ```
+
 以上环境变量的获取方式参考文档：https://edgeone.cloud.tencent.com/pages/document/178968240027983872
 
 再执行`npm run dev`即可预览到 Contentful 数据了。
@@ -133,6 +137,7 @@ DEV=true
 项目使用静态页面生成（SSG），可以部署到任何静态托管服务：
 
 1. 构建项目：
+
 ```bash
 npm run build
 ```
@@ -154,4 +159,5 @@ npm run build
 [MIT License](https://github.com/TencentEdgeOne/enterprise-website-template/blob/main/LICENSE)
 
 ## 一键部署
+
 [![Deploy with EdgeOne Pages](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://console.cloud.tencent.com/edgeone/pages/new?template=enterprise-website-template)

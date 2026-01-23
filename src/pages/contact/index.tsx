@@ -2,19 +2,9 @@ import { NextPage } from "next";
 import MainLayout from "../../components/layouts/MainLayout";
 import { ContactForm } from "../../components/forms/ContactForm";
 import { offices } from "../../config/offices";
+import { FORMSPREE_ID } from "../../config/formspree";
 
 const ContactPage: NextPage = () => {
-  const handleSubmit = (formData: {
-    name: string;
-    email: string;
-    phone: string;
-    company: string;
-    message: string;
-  }) => {
-    // 处理表单提交
-    console.log("Form submitted:", formData);
-  };
-
   return (
     <MainLayout
       title="联系我们 - Technology Company Official Website"
@@ -64,7 +54,8 @@ const ContactPage: NextPage = () => {
               If you have any questions or needs, please feel free to contact us. Our team will be happy to serve you.
             </p>
 
-            <ContactForm onSubmit={handleSubmit} />
+           
+            <ContactForm formspreeId={FORMSPREE_ID} />
           </div>
         </div>
       </div>

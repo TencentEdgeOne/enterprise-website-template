@@ -64,12 +64,21 @@ yarn build
 ```
 
 ## Integrating with CMS(Optional)
+
 The project provides a script to integrate with Contentful CMS, which can pull blog data from Contentful to Markdown.
 
 The project provides a data structure that can be directly [imported](https://www.contentful.com/developers/docs/tutorials/cli/import-and-export/) into Contentful:
 `contentful space import --content-file contentful-export.json --space-id ${your-space-id}`
 
 Configure environment variables locally:
+
+```
+CONTENTFUL_SPACE_ID=Contentful Space ID
+CONTENTFUL_DELIVERY_TOKEN=Contentful API Key
+CONTENTFUL_PREVIEW_TOKEN=Contentful Preview Key
+DEV=true
+NEXT_PUBLIC_FORMSPREE_ID=Formspree Form ID for Contact Us submissions
+```
 
 ## Project Structure
 
@@ -124,6 +133,7 @@ The project uses multiple configuration files to manage data:
 The project uses static site generation (SSG), which can be deployed to any static hosting service:
 
 1. Build the project:
+
 ```bash
 npm run build
 ```
@@ -145,4 +155,5 @@ npm run build
 [MIT License](https://github.com/TencentEdgeOne/enterprise-website-template/blob/main/LICENSE)
 
 ## Deploy
+
 [![Deploy with EdgeOne Pages](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://console.tencentcloud.com/edgeone/pages/new?template=enterprise-website-template)
