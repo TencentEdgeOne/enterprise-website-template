@@ -13,9 +13,11 @@ const MainLayout = ({ children, title = 'Technology Company Official Website', d
   return (
     <div className="min-h-screen bg-white">
       <Head>
-        <title>{title}</title>
+        <title>{title} | EdgeOne Makers</title>
         <meta name="description" content={description} />
-      </Head>
+          <meta name="description" content="Demo only · EdgeOne Makers" />
+    <meta name="keywords" content="EdgeOne Makers, Demo only" />
+</head>
 
       <Navbar />
 
