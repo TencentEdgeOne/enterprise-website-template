@@ -9,15 +9,14 @@ interface MainLayoutProps {
   description?: string;
 }
 
-const MainLayout = ({ children, title = 'Technology Company Official Website', description = 'Welcome to our website' }: MainLayoutProps) => {
+const MainLayout = ({ children, title = 'Technology Company Official Website', description = 'Welcome to our website · Demo only · EdgeOne Makers' }: MainLayoutProps) => {
   return (
     <div className="min-h-screen bg-white">
       <Head>
         <title>{title} | EdgeOne Makers</title>
         <meta name="description" content={description} />
-          <meta name="description" content="Demo only · EdgeOne Makers" />
-    <meta name="keywords" content="EdgeOne Makers, Demo only" />
-</head>
+        <meta name="keywords" content="EdgeOne Makers, Demo only" />
+      </Head>
 
       <Navbar />
 
